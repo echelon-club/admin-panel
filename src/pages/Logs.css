@@ -1,0 +1,42 @@
+.log-badge {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.65rem;
+  font-weight: 500;
+  border-radius: 0;
+}
+
+.log-added {
+  background: #eafaf1;
+  color: #1e8449;
+  border: 1px solid #a9dfbf;
+}
+
+.log-deleted {
+  background: #fdf2f2;
+  color: #c0392b;
+  border: 1px solid #f1948a;
+}
+
+.log-timestamp {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  color: #8a8a8a;
+  white-space: nowrap;
+  font-weight: 300;
+}
+
+.log-count-badge {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #d4d1cc;
+  padding: 0.4rem 1rem;
+  border: 1px solid #ece9e3;
+  align-self: flex-end;
+  font-weight: 400;
+}

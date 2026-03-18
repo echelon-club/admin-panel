@@ -1,0 +1,130 @@
+.table-wrap {
+  overflow-x: auto;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 300;
+}
+
+thead tr {
+  border-bottom: 2px solid #ece9e3;
+}
+
+thead th {
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #d4d1cc;
+  font-weight: 400;
+  padding: 0 1.2rem 0.9rem 0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ece9e3;
+  transition: background 0.15s;
+}
+
+tbody tr:hover {
+  background: #faf9f6;
+}
+
+tbody td {
+  padding: 0.95rem 1.2rem 0.95rem 0;
+  color: #555;
+  vertical-align: middle;
+}
+
+.td-title {
+  color: #0a0a0a;
+  font-weight: 400;
+  max-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-loading,
+.table-empty {
+  text-align: center;
+  padding: 3rem;
+  color: #d4d1cc;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+}
+
+.td-thumb {
+  width: 56px;
+  height: 38px;
+  object-fit: cover;
+  border-radius: 2px;
+  background: #ece9e3;
+  display: block;
+}
+
+.td-thumb-placeholder {
+  width: 56px;
+  height: 38px;
+  background: #ece9e3;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.td-thumb-placeholder span {
+  font-size: 0.5rem;
+  color: #d4d1cc;
+  letter-spacing: 0.1em;
+}
+
+.tag-pill {
+  display: inline-block;
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.65rem;
+  border: 1px solid #d4d1cc;
+  color: #8a8a8a;
+  white-space: nowrap;
+}
+
+.td-rsvp-link {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0a0a0a;
+  text-decoration: none;
+  border-bottom: 1px solid #d4d1cc;
+  transition: border-color 0.2s;
+}
+
+.td-rsvp-link:hover {
+  border-color: #0a0a0a;
+}
+
+.btn-delete {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.32rem 0.8rem;
+  background: transparent;
+  color: #bbb;
+  border: 1px solid #e8e5e0;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.btn-delete:hover {
+  color: #c0392b;
+  border-color: #c0392b;
+}

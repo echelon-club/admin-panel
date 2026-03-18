@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #0a0a0a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  height: 62px;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  background: #f5f5f0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-brand-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #858585;
+  font-weight: 300;
+}
+
+.nav-divider {
+  width: 1px;
+  height: 22px;
+  background: #1e1e1e;
+}
+
+.nav-tabs {
+  display: flex;
+  list-style: none;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-tabs button {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8b8b8b;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0 1.1rem;
+  height: 62px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  font-weight: 400;
+}
+
+.nav-tabs button:hover {
+  color: #777;
+}
+
+.nav-tabs button.active {
+  color: #f5f5f0;
+  border-bottom-color: #f5f5f0;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.user-pill {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: #999999;
+  text-transform: lowercase;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.logout-btn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.42rem 1rem;
+  background: transparent;
+  color: #717171;
+  border: 1px solid #1e1e1e;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 400;
+}
+
+.logout-btn:hover {
+  color: #f5f5f0;
+  border-color: #444;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1.2rem;
+  }
+
+  .nav-brand-label {
+    display: none;
+  }
+
+  .nav-divider {
+    display: none;
+  }
+
+  .nav-tabs button {
+    padding: 0 0.7rem;
+    font-size: 0.58rem;
+  }
+
+  .user-pill {
+    display: none;
+  }
+}

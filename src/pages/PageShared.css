@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+.page-content {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 3rem 2.5rem 6rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.8rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid #ece9e3;
+}
+
+.page-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  color: #0a0a0a;
+  line-height: 1;
+}
+
+.page-header p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #8a8a8a;
+  margin-top: 0.4rem;
+  letter-spacing: 0.02em;
+  font-weight: 300;
+}
+
+.form-card {
+  background: #ece9e3;
+  padding: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.form-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+  letter-spacing: -0.01em;
+  color: #0a0a0a;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-group.full {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  font-weight: 400;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 300;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d4d1cc;
+  background: #f5f5f0;
+  color: #0a0a0a;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+  appearance: none;
+  border-radius: 0;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #c0bdb8;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #0a0a0a;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-actions {
+  margin-top: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 0.8rem 2.2rem;
+  background: #0a0a0a;
+  color: #f5f5f0;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  font-weight: 400;
+}
+
+.btn-primary:hover {
+  opacity: 0.78;
+}
+
+.btn-primary:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.btn-ghost {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 0.8rem 1.5rem;
+  background: transparent;
+  color: #8a8a8a;
+  border: 1px solid #d4d1cc;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 400;
+}
+
+.btn-ghost:hover {
+  color: #0a0a0a;
+  border-color: #0a0a0a;
+}
+
+.records-section {
+  margin-top: 1rem;
+}
+
+.records-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1.2rem;
+}
+
+.records-header h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #0a0a0a;
+}
+
+.record-count {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #d4d1cc;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding: 2rem 1.2rem 5rem;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .form-card {
+    padding: 1.5rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full {
+    grid-column: auto;
+  }
+}

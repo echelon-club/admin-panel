@@ -1,0 +1,139 @@
+.login-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a0a;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 3rem;
+  background: #111;
+  border: 1px solid #1e1e1e;
+}
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.login-logo-mark {
+  width: 34px;
+  height: 34px;
+  background: #f5f5f0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.login-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-logo-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #2e2e2e;
+  font-weight: 300;
+}
+
+.login-box h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #f5f5f0;
+  margin-bottom: 0.35rem;
+  letter-spacing: -0.02em;
+}
+
+.login-box p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  color: #333;
+  margin-bottom: 2.2rem;
+  letter-spacing: 0.03em;
+  font-weight: 300;
+}
+
+.login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1.2rem;
+}
+
+.login-field label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 400;
+}
+
+.login-field input {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 300;
+  padding: 0.78rem 1rem;
+  background: #0a0a0a;
+  border: 1px solid #1e1e1e;
+  color: #f5f5f0;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+  border-radius: 0;
+}
+
+.login-field input::placeholder {
+  color: #2a2a2a;
+}
+
+.login-field input:focus {
+  border-color: #3a3a3a;
+}
+
+.login-error {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  color: #e74c3c;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+  font-weight: 300;
+}
+
+.login-btn {
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.9rem;
+  background: #f5f5f0;
+  color: #0a0a0a;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.3rem;
+  transition: opacity 0.2s;
+  font-weight: 400;
+}
+
+.login-btn:hover {
+  opacity: 0.85;
+}
+
+.login-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
