@@ -38,7 +38,7 @@ export default function Login() {
       <div className="login-box">
         <div className="login-logo">
           <div className="login-logo-mark">
-            <img src="/logo.png" alt="E" className="login-logo-img" />
+            <img src={process.env.PUBLIC_URL + "/logo.png"} alt="E" className="login-logo-img" />
           </div>
           <span className="login-logo-text">Club Admin</span>
         </div>

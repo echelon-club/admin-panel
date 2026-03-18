@@ -16,7 +16,7 @@ function AppShell() {
     return (
       <div className="app-loading">
         <div className="app-loading-mark">
-          <img src="/logo.png" alt="E" />
+          <img src={process.env.PUBLIC_URL + "/logo.png"} alt="E" />
         </div>
       </div>
     );

@@ -16,7 +16,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
       <div className="navbar-left">
         <div className="nav-brand">
           <div className="logo-mark">
-            <img src="/logo.png" alt="E" className="logo-img" />
+            <img src={process.env.PUBLIC_URL + "/logo.png"} alt="E" className="logo-img" />
           </div>
           <span className="nav-brand-label">Admin Panel</span>
         </div>
