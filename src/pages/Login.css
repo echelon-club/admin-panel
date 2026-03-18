@@ -44,7 +44,7 @@
   font-size: 0.6rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #2e2e2e;
+  color: #616161;
   font-weight: 300;
 }
 
@@ -97,11 +97,11 @@
 }
 
 .login-field input::placeholder {
-  color: #2a2a2a;
+  color: #868686;
 }
 
 .login-field input:focus {
-  border-color: #3a3a3a;
+  border-color: #848484;
 }
 
 .login-error {
